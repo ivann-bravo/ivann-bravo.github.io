@@ -1033,4 +1033,9 @@ input, textarea {
         grid-template-columns: repeat(1, 1fr);
         margin: 20px 0;
     }
+
+    .happy-hour-section-txt h2 {
+        font-size: 40px;
+        line-height: 100%;
+    }
 }
