@@ -529,6 +529,7 @@ body {
     font-size: 45px;
     font-weight: 700;
     color: #FDFDFD;
+    margin: 0 15px 0 15px;
 }
 
 .top-section-txt h3 {
@@ -1005,8 +1006,6 @@ input, textarea {
     
     .top-section-txt h2 {
         font-size: 35px;
-        font-weight: 700;
-        color: #FDFDFD;
     }
     
     .top-section-txt h3 {
