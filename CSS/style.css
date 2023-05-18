@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 * {
     margin: 0;
@@ -81,7 +82,7 @@ body {
 .header-content {
     display: flex;
     align-items: center;
-    padding: 200px 20px 150px 20px;
+    padding: 150px 20px 150px 20px;
 }
 
 .header-img {
@@ -112,14 +113,12 @@ body {
     cursor: pointer;
 }
 
+
+
 .btn-1:hover {
     background: linear-gradient(90deg, #F3031F 0%, #BC0217 100%);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
-}
-
-.btn-1 .icon{
-    margin-left: 5px;
 }
 
 .btn-2 {
@@ -142,10 +141,6 @@ body {
     transform: translateY(-1px);
 }
 
-.btn-2 .icon{
-    margin-left: 5px;
-}
-
 .btn-3 {
     display: inline-block;
     margin: 30px 0 45px;
@@ -165,6 +160,7 @@ body {
 }
 
 .icon {
+    margin-left: 10px;
     width: 20px;
 }
 
@@ -492,7 +488,7 @@ body {
 .top-section-bg-home {
     height: 100vh;
     width: 100%;
-    background-image: url(../IMG/bg-home.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.6)), url(../IMG/bg-home.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -509,7 +505,7 @@ body {
 
 .top-section-bg-2 {
     width: 100%;
-    background-image: url(../IMG/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../IMG/bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -587,14 +583,13 @@ body {
     font-style: italic;
     font-weight: 400;
     color: black;
-    margin: -10px 0 20px;
+    margin-top: -10px;
 }
 
 .nosotros-section-txt p {
     font-size: 18px;
     color: black;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 2% 10% 0 10%;
 }
 
 .map-container {
@@ -625,11 +620,26 @@ body {
     background-size: cover;
 }
 
+.equipo-section-bg-2 {
+    padding: 80px 0 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.6)), url(../IMG/bg-cocina-2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .equipo-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    margin: 40px 0;
+    margin: 40px 40px 0 40px;
+}
+
+.opiniones-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 40px 40px 0 40px;
 }
 
 .persona {
@@ -693,6 +703,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .form-section-txt {
@@ -755,6 +766,64 @@ input, textarea {
 .btn-form:hover {
     transform: scale(0.95);
     background-color: #900314;
+}
+
+.happy-hour-section-bg {
+    padding: 80px 0 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../IMG/bg-happy-hour.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.happy-hour-section-txt {
+    width: 100%;
+    text-align: center;
+}
+
+.happy-hour-section-txt h2 {
+    font-family: 'Dela Gothic One', cursive;
+    color: #FDFDFD;
+    font-size: 65px;
+    line-height: 70px;
+    text-shadow: 2px 2px 5px black;
+    margin: 15px 0 15px 0;
+}
+
+.happy-hour-section-txt p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #FDFDFD;
+    text-shadow: 3px 3px 3px black;
+}
+
+.happy-hour-section-txt h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    color: #DB9423;
+    text-shadow: 3px 3px 3px black;
+}
+
+.five-stars img {
+    width: 100px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.persona img {
+    max-width: 100%;
+    height: auto;
+}
+
+.reserva-cta-section-bg {
+    padding: 80px 0 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../IMG/bg-home-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -843,7 +912,7 @@ input, textarea {
 
     .header-img {
         width: 100%;
-        margin-top: 45px;
+        margin: 45px 0 45px 0;
     }
 
     .product-menu {
@@ -956,4 +1025,12 @@ input, textarea {
         font-size: 40px;
     }
 
+    .nosotros-section-txt h4 {
+        padding: 5px 10px 5px 10px;
+    }
+
+    .opiniones-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 0;
+    }
 }
