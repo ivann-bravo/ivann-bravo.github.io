@@ -41,28 +41,29 @@
         <section class="form-section-bg separator-section">
             <div class="form-section-txt">
                 <h2>Completa estos datos y nosotros nos encargamos del resto</h2>
-                <form action="https://formsubmit.co/ your@email.com " method="POST">
+                <form id="formulario" onsubmit="return validarFormulario()">
                     <label for="name">Nombre y Apellido</label>
                     <input type="text" name="name" id="name" placeholder="Ingrese su nombre y apellido">
+
+                    <label for="dni">DNI</label>
+                    <input type="text" name="dni" id="dni" placeholder="Ingrese su DNI">
         
                     <label for="email">Correo electrónico</label>
                     <input type="email" name="email" id="email" placeholder="Ingrese su correo">
         
-                    <label for="text">Día de la reserva</label>
+                    <label for="text">Día de la reserva (Una semana máximo)</label>
                     <input type="date" name="date" id="date">
         
-                    <label for="text">Hora de la reserva</label>
+                    <label for="text">Hora de la reserva (11 a 23hs)</label>
                     <input type="time" name="time" id="time">
         
-                    <label for="text">¿Cuantas personas asistirán?</label>
-                    <input type="number" placeholder="Cantidad de personas">
+                    <label for="text">¿Cuantas personas asistirán? (1-10)</label>
+                    <input type="number" name="people" id="people" placeholder="Cantidad de personas" min="1" max="10">
         
                     <label for="coments">¿Quisieras decirnos algo?</label>
                     <textarea name="coments" id="coments" cols="30" rows="5" placeholder="Comentarios"></textarea>
         
-                    <input class="btn-form" type="submit"value="Enviar">
-        
-                    <input type="hidden" name="_next" value="">
+                    <input class="btn-form" type="submit" value="Enviar">
                 </form>
             </div>
         </section>
@@ -106,7 +107,7 @@
         <div class="links">
             <h4>Horario de atención</h4>
             <ul>
-                <li><a>Martes a Domingo de 8 a 23 hs</a></li>
+                <li><a>Martes a Domingo de 11 a 23 hs</a></li>
             </ul>
             <h5>Nuestras redes sociales</h5>
             <div class="socials">
@@ -129,6 +130,7 @@
         </div>
     </footer>
     <script src="JS/script.js"></script>
+    <script src="JS/validacion.js"></script>
 
 </body>
 </html>

@@ -93,6 +93,14 @@ body {
     width: 100%;
 }
 
+.hamburger-menu {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+
 .botones {
     display: flex;
     justify-content: center;
@@ -523,6 +531,7 @@ body {
     color: #FDFDFD;
     text-shadow: 2px 2px 5px black;
     margin-bottom: 25px;
+    line-height: 100%;
 }
 
 .top-section-txt h2 {
@@ -659,7 +668,6 @@ body {
     border-radius: 50%;
     margin-bottom: 5px;
     max-width: 100%;
-    height: auto;
 }
 
 .persona h4 {
@@ -790,6 +798,7 @@ input, textarea {
     line-height: 70px;
     text-shadow: 2px 2px 5px black;
     margin: 15px 0 15px 0;
+    line-height: 100%;
 }
 
 .happy-hour-section-txt p {
@@ -1002,6 +1011,7 @@ input, textarea {
     
     .top-section-txt h1 {
         font-size: 40px;
+        line-height: 100%;
     }
     
     .top-section-txt h2 {
@@ -1035,6 +1045,5 @@ input, textarea {
 
     .happy-hour-section-txt h2 {
         font-size: 40px;
-        line-height: 100%;
     }
 }
