@@ -1,0 +1,52 @@
+{
+    "hamburguesas": [
+        {
+        "id": "gusteau-bbq",
+        "nombre": "Gusteau's BBQ",
+        "descripcion": "Esta jugosa creación comienza con una base de salsa alioli ahumada, que le confiere un sabor ahumado y delicioso desde el primer bocado. Está acompañada de rodajas de pepino crujientes que agregan un toque refrescante. El cheddar fundido aporta una textura suave y un sabor cremoso, mientras que el bacon crujiente añade un contraste irresistible. Cada componente se combina armoniosamente para crear una experiencia culinaria única.",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-1.jpg"
+        },
+        {
+        "id": "doble-stacker-supreme",
+        "nombre": "Doble Stacker Supreme",
+        "descripcion": "Robusta y llena de sabor. Cada bocado es una explosión de sabores y texturas perfectamente equilibradas. Los panes están generosamente untados con nuestra irresistible salsa Stacker, que añade un toque de picante desde el primer bocado. Encontrarás capas de jugosa carne a la parrilla con cheddar que te deleitarán con cada bocado. La combinación de lechuga crujiente, tomate fresco, pepino rebanado y cebolla en aros que agrega un toque refrescante y una textura vibrante a cada mordisco.",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-2.jpg"
+        },
+        {
+        "id": "doble-onion-sensation",
+        "nombre": "Doble Onion Sensation",
+        "descripcion": "Sumérgete en una explosión de sabores con nuestra Doble Onion Sensation. Jugosa carne a la parrilla, capas de cebolla y morrón caramelizados, pepinos crujientes y una irresistible salsa se combinan para ofrecerte una experiencia de sabor inolvidable. ¡Una hamburguesa que despierta tus sentidos y te deja queriendo más!",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-3.jpg"
+        },
+        {
+        "id": "garden-harmony",
+        "nombre": "Garden Harmony",
+        "descripcion": "Sumérgete en la armonía de sabores frescos con nuestra Garden Harmony Burger. Una base de lechuga crujiente, rodajas de pepino refrescante, tomate jugoso, una jugosa rodaja de carne, huevo y bacon a la plancha se combinan en esta deliciosa creación. Cada mordisco es una sinfonía de sabores que te transportará a un jardín de sabores frescos y satisfactorios. ¡Disfruta de la perfección de los ingredientes en cada bocado!",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-4.jpg"
+        },
+        {
+        "id": "red-inferno",
+        "nombre": "Red Inferno",
+        "descripcion": "Prepara tu paladar para la explosión de sabores ardientes. Esta hamburguesa está destinada a satisfacer a los amantes de la comida picante en busca de una experiencia intensa. Doble carne jugosa con cheddar derretido, todo acompañado de salsa picante roja en ambos panes. Los pepinos frescos añaden un toque refrescante a esta experiencia de sabor audaz. ¡Una hamburguesa que enciende tus papilas gustativas!",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-5.jpg"
+        },
+        {
+        "id": "morning-sunrise",
+        "nombre": "Morning Sunrise",
+        "descripcion": "Disfruta de la felicidad matutina con nuestra Morning Sunrise. Esta hamburguesa te deleitará con una combinación irresistible de ingredientes clásicos y jugosos. Un huevo frito con yema cremosa se corona sobre jugosas fetas de jamón cocido y queso Tybo derretido. Cada bocado es una explosión de sabores reconfortantes y satisfactorios. ¡Empieza tu día con una sonrisa y un sabor delicioso!",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-6.jpg"
+        },
+        {
+        "id": "donut-delight",
+        "nombre": "Donut Delight",
+        "descripcion": "Déjate seducir por la irresistible tentación de nuestra Donut Delight. Una hamburguesa triple con cheddar y bacon, pero con un giro sorprendente: los panes son donas dulces. Cada bocado combina lo salado de la carne jugosa, el queso derretido y el bacon crujiente, con la dulzura y suavidad de las donas. ¡Una experiencia deliciosa y sorprendente que satisfará todos tus antojos!",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-7.jpg"
+        },
+        {
+        "id": "midnight-sea",
+        "nombre": "Midnight Sea",
+        "descripcion": "Sumérgete en la oscuridad tentadora de nuestra Midnight Sea. Con panes negros impregnados con tinta de pulpo, esta hamburguesa es una aventura culinaria única. Un medallón de salmón jugoso se combina con bacon crujiente, cheddar derretido, pepino refrescante y una irresistible mezcla de ketchup y salsa de langostinos. Un festín marino en cada bocado, que te transporta a las profundidades de la medianoche. ¡Déjate seducir por el misterio y el sabor inigualable de la Midnight Sea!",
+        "foto":"../IMG/Hamburguesas-Menu/hamburguesa-8.jpg"
+        }
+    ]
+}

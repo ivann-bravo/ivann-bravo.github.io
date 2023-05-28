@@ -94,8 +94,8 @@ body {
 }
 
 .hamburger-menu {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
     margin-bottom: 5px;
     max-width: 100%;
@@ -710,6 +710,11 @@ body {
     padding-top: 80px;
 }
 
+.personalizables-section-bg {
+    background-color: #FDFDFD;
+    padding: 80px 0 80px;
+}
+
 .separator-section-bg {
     background-color: #FDFDFD;
     padding-top: 30px;
@@ -845,6 +850,49 @@ input, textarea {
     background-size: cover;
 }
 
+.personalizables {
+    padding: 20px;
+    text-align: center;
+}
+
+.personalizables:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.personalizables img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+
+.personalizables h4 {
+    margin: 0;
+    color: #000000;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: none;
+    margin-bottom: 3px;
+}
+
+.personalizables p {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    color: #000000;
+    margin: 5px 0 20px;
+    text-shadow: none;
+}
+
+.personalizables hr {
+    height: 1px;
+    width: 20px;
+    border-color: #db9423;
+    margin: auto;
+}
+
 @media (max-width: 1023px) and (min-width: 768px) {
     .equipo-container {
         grid-template-columns: repeat(2, 1fr);
@@ -858,6 +906,13 @@ input, textarea {
         margin: 20px 0;
     }
 
+}
+
+@media (max-width: 1375px) {
+    .hamburger-menu {
+        height: 370px;
+        width: 370px;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -912,8 +967,8 @@ input, textarea {
     }
 
     .header-content {
-        flex-direction: column;
-        padding: 180px 30px 30px 30px;
+        flex-direction: column-reverse;
+        padding: 50px 30px 50px 30px;
     }
 
     .botones {
@@ -932,6 +987,9 @@ input, textarea {
     .header-img {
         width: 100%;
         margin: 45px 0 45px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .product-menu {
