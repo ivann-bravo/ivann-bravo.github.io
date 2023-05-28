@@ -472,12 +472,6 @@ body {
     background-color: #DD2418;
 }
 
-.social img {
-    margin: 0;
-    height: 20px;
-    width: 20px;
-}
-
 .top-section {
     display: flex;
     align-items: center;
