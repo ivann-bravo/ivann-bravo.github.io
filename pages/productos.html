@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Productos Disponibles</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../IMG/favicon.ico">
+    <script src="https://kit.fontawesome.com/4eef0c1275.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-content">
+        <a href="../index.html">
+            <img src="../IMG/Logo.png" alt="Logo" class="logo">
+        </a>
+        <h1>Apel</h1>
+    </header>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="app" class="container">
+            <div class="body-header">
+                <h1>Celulares Disponibles</h1>
+                <br>
+                <a class="btn-primary" href="../pages/producto_nuevo.html">Cargar nuevo producto</a>
+            </div>
+            <div v-if="error">
+                <p>¡ERROR! Lo sentimos.</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+            <div class="spinner-border"></div>
+                <p>Cargando...</p>
+                </section>
+                <section v-else>
+                    <div class="table-header">
+                        <table cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                        <table>
+                            <tbody>
+                                <tr v-for="producto in productos">
+                                    <td scope="row">{{producto.id}}</td>
+                                    <td>{{producto.nombre}}</td>
+                                    <td>{{producto.precio}}</td>
+                                    <td>{{producto.stock}}</td>
+                                    <td>
+                                    <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                    </td>
+                                    <td class="td-buttons">
+                                    <a class="btn-primary" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
+                                    <button type="button" class="btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            </div>
+            <div class="footer-column">
+            <h3>Contacto</h3>
+            <p>Teléfono: 11 1234-5678</p>
+            <p>Email: contacto@apel.com.ar</p>
+            </div>
+            <div class="footer-column">
+            <h3>Redes Sociales</h3>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>🍎 Apel - Tienda Oficial</p>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+<script src="../js/productos.js"></script>
+
+</body>
+</html>
