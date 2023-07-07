@@ -10,7 +10,7 @@ createApp({
             imagen: "",
             stock: 0,
             precio: 0,
-            url: 'http://ibravo.pythonanywhere.com/productos/' + id,
+            url: 'https://ibravo.pythonanywhere.com/productos/' + id,
         }
     },
     methods: {
